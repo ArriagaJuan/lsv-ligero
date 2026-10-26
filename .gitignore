@@ -1,0 +1,36 @@
+# Entornos y archivos temporales
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*.tmp
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+config_ligero.json
+
+# Mediciones, respaldos y material de referencia
+exportaciones_lsv/
+exportaciones_ejemplo/
+respaldos_jsonl/
+referencias/
+*.jsonl
+*.xlsx
+*.xls
+*.csv
+*.mp4
+*.mov
+*.avi
+*.zip
