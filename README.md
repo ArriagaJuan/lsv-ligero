@@ -59,11 +59,7 @@ La simulación genera datos sintéticos; no produce resultados de calibración.
 
 ## Alcance y limitaciones
 
-Esta implementación requiere validación con los instrumentos reales. El protocolo del LSV, la consulta de velocidad y la comunicación TCP deben contrastarse con el manual del equipo.
-
 El divisor DAQ se almacena como referencia; no configura el hardware. La lectura RS-232 utiliza consultas periódicas. El desfase es manual y no equivale a una calibración automática. El control por puerto serie no garantiza sincronización submilisegundo.
-
-No se especifica una marca o modelo exacto de LSV compatible. La compatibilidad debe confirmarse antes del uso real. Los resultados no deben utilizarse como calibración metrológica validada sin pruebas independientes.
 
 ## Archivos principales
 
@@ -75,7 +71,3 @@ No se especifica una marca o modelo exacto de LSV compatible. La compatibilidad 
 - exporter.py: exportación y respaldo.
 - arduino/: firmware y aplicación independiente del trigger.
 - tests/: pruebas automatizadas.
-
-## Datos locales
-
-Los ajustes de conexión y los resultados se guardan localmente. El archivo .gitignore excluye configuraciones personales, entornos, respaldos y archivos de medición habituales. Antes de publicar archivos adicionales, revise su contenido: .gitignore no elimina archivos ya versionados ni detecta información sensible.
